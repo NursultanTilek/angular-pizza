@@ -1,0 +1,20 @@
+<div class="pizza-block__selector">
+  <ul>
+    <li
+      *ngFor="let crust of crustOptions"
+      [class.active]="crust === selectedCrust"
+      (click)="selectCrust(crust)"
+    >
+      {{ crust }}
+    </li>
+  </ul>
+  <ul>
+    <li
+      *ngFor="let size of sizeOptions"
+      [class.active]="size === selectedSize"
+      (click)="selectSize(size)"
+    >
+      {{ size }}
+    </li>
+  </ul>
+</div>

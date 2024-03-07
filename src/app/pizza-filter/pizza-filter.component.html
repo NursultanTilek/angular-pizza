@@ -1,0 +1,7 @@
+<div class="categories">
+    <ul>
+        <li *ngFor="let category of categories" [ngClass]="{'active': isActive === category}" (click)="filterPizzas(category)">
+            {{ category }}
+        </li>
+    </ul>
+</div>

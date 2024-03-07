@@ -1,0 +1,21 @@
+<div class="header">
+  <nav class="container">
+    <a routerLink="/" class="header__link">
+      <div class="header__logo">
+        <img width="38" src="../../assets/pizza-logo.svg" alt="Pizza logo" />
+        <div>
+          <h1>Pizza</h1>
+          <p>The best pizzas in the world</p>
+        </div>
+      </div>
+    </a>
+    <div *ngIf="router.url!=='/cart'"  class="header__cart">
+      <a routerLink="/cart" class="button button--cart">
+        <span><i>$</i> 50 </span>
+        <div class="button__delimiter"></div>
+        <img src="../../assets/cart-icon.svg" alt="cart-icon">
+        <span>50</span>
+      </a>
+    </div>
+  </nav>
+</div>
